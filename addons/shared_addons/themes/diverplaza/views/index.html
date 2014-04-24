@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>.::Diver Plaza::.</title>
+	<link rel="stylesheet" type="text/css" href="css/component.css" />
+	<link rel="stylesheet" href="css/estilos.css">
+	<link rel="stylesheet" href="css/idangerous.swiper.css">
+	<link rel="stylesheet" href="css/normalize.css">
+</head>
+<body>
+	<div class="swiper-container">
+		<div class="mask_home"></div>
+	    <div class="swiper-wrapper">
+	      <div class="swiper-slide diver1-slide"> </div>
+	      <div class="swiper-slide diver2-slide"> </div>
+	      <div class="swiper-slide diver3-slide"> </div>
+	    </div>
+	    <div class="pagination" style="display:none"></div>
+	    <div id="main">
+		<header>	
+			<figure id="logo">
+				<a href="index.html"><img src="img/misc/logo.png" alt=""></a>
+			</figure>
+			<nav id="nav_redes">
+				<div class="title_nav_redes">
+					Comunidad Virtual Diverplaza:
+				</div>
+				<ul>
+					<li><a class="face" href="https://www.facebook.com/DiverPlazaCC" target="_blank"></a></li>
+					<li><a class="twit" href="https://twitter.com/DiverPlazaCC" target="_blank"></a></li>
+					<li><a class="fore" href="https://es.foursquare.com/v/diver-plaza/4bec6966c43f2d7fc0d9dbd9" target="_blank"></a></li>
+				</ul>
+			</nav>
+		</header>
+		<nav class="nav_general">
+			<div id="dl-menu" class="dl-menuwrapper">
+				<button class="dl-trigger"></button>
+				<ul class="dl-menu">
+					<li><a href="index.html">Inicio</a></li>
+					<li><a href="conocenos.html">Conocenos</a></li>
+					<li><a href="tiendas.html">Tiendas</a></li>
+					<li><a href="zonaD.html">Diversion</a></li>
+<!-- 					<li><a href="#">Eventos</a></li>
+					<li><a href="#">Divercliente</a></li> -->
+					<li><a href="servicios.html">Servicios</a></li>
+					<li><a href="contacto.html">Contáctenos</a></li>
+				</ul>
+			</div><!-- /dl-menuwrapper --><!-- /container -->
+		</nav>
+		<section id="botones_home">
+			<h1>EN DIVERPLAZA <strong>TU MUNDO DIVERTIDO</strong></h1>
+			<div class="btns">
+					<a href="fundacion.html" class="yon"></a>
+					<a href="zonaD.html" class="yon bt2"></a>
+					<a href="conocenos.html" class="yon bt3"></a>
+					<a href="diverAutos.html" class="yon bt4"></a>
+					<a href="bodegas.html" class="yon bt5"></a>
+			</div>
+			<h3 style="color: #FFFFFF;">
+					Dejate Cautivar
+				</h3>
+
+				<h3 style="color: #ed9c00; font-size:30px">
+					Ven a Diverplaza
+				</h3>
+
+				<a href="#llegar"><img src="img/misc/abajo.png" alt=""></a>
+		</section>
+	</div>
+	</div>
+	<section id="llegar" >
+		<h2 class="estamos">Encuentranos</h2>
+		<div id="como_llegar">
+			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3976.3946746530582!2d-74.11519499999997!3d4.701301999999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f9b51a3c64b21%3A0xab2973bb79f953f3!2sDiver+Plaza+Alamos+-+Exito+Alamos!5e0!3m2!1ses-419!2s!4v1398112836531" width="100%" height="450" frameborder="0" style="border:0" scrollwheel="false" ></iframe>
+		</div>
+	</section>
+	<footer>
+		<p style="font-size:30px; color: #edd03b;">Diverplaza Centro Comercial</p>
+		<p>Transversal 96 #70a-85, Alamos, Bogotá, Colombia</p>
+		<p>57+1 430 40 73</p>
+		<p style="color: #edd03b;">jefe.eventos@diverplaza.com</p>
+		<p>© 2014 - www.diverplaza.com</p>
+	</footer>
+
+<!-- 	// <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script> -->
+	<script src="js/jquery.js"></script>
+	<script src="js/jquery-1.10.1.min.js"></script>
+  	<script src="js/idangerous.swiper-2.1.min.js"></script>
+	<script src="js/modernizr.custom.js" ></script>
+	<script src="js/jquery.dlmenu.js"></script>
+  	<script>
+	  	var mySwiper = new Swiper('.swiper-container',{
+	    pagination: '.pagination',
+	    paginationClickable: true,
+	    autoplay: 5000,
+	    // mode: 'vertical',
+  		});
+ 	</script>
+ 	<script>
+		$(function() {
+			$( '#dl-menu' ).dlmenu();
+		});
+	</script>
+	<script type="text/javascript">
+		$(function() {
+		  $('a[href*=#]:not([href=#])').click(function() {
+		    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+
+		      var target = $(this.hash);
+		      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+		      if (target.length) {
+		        $('html,body').animate({
+		          scrollTop: target.offset().top
+		        }, 1000);
+		        return false;
+		      }
+		    }
+		  });
+		});
+	</script>
+</body>
+</html>

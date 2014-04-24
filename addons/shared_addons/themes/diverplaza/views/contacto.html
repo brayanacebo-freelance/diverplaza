@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>.::Diver Plaza::.</title>
+	<link rel="stylesheet" type="text/css" href="css/component.css" />
+	<link rel="stylesheet" type="text/css" href="css/diver_style.css" />
+	<link rel="stylesheet" href="css/estilos.css">
+	<link rel="stylesheet" href="css/idangerous.swiper.css">
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+	<div id="main_header">
+		<header>	
+			<figure id="logo">
+				<a href="index.html"><img src="img/misc/logo.png" alt=""></a>
+			</figure>
+			<nav id="nav_redes">
+				<div class="title_nav_redes">
+					Comunidad Virtual Diverplaza:
+				</div>
+				<ul>
+					<li><a class="face" href="https://www.facebook.com/DiverPlazaCC" target="_blank"></a></li>
+					<li><a class="twit" href="https://twitter.com/DiverPlazaCC" target="_blank"></a></li>
+					<li><a class="fore" href="https://es.foursquare.com/v/diver-plaza/4bec6966c43f2d7fc0d9dbd9" target="_blank"></a></li>
+				</ul>
+			</nav>
+		</header>
+		<nav class="nav_general">
+			<div id="dl-menu" class="dl-menuwrapper">
+				<button class="dl-trigger">Open Menu</button>
+				<ul class="dl-menu">
+					<li><a href="index.html">Inicio</a></li>
+					<li><a href="conocenos.html">Conocenos</a></li>
+					<li><a href="tiendas.html">Tiendas</a></li>
+					<li><a href="zonaD.html">Diversion</a></li>
+<!-- 					<li><a href="#">Eventos</a></li>
+					<li><a href="#">Divercliente</a></li> -->
+					<li><a href="servicios.html">Servicios</a></li>
+					<li><a href="contacto.html">Contáctenos</a></li>
+				</ul>
+			</div><!-- /dl-menuwrapper --><!-- /container -->
+		</nav>
+	</div>
+	<div>
+</div>
+
+	<section id="contacto" class="contacto">
+
+			<div class="form">
+				
+
+				<div class="form_container">
+
+					<form name="form1" method="post" action="">
+  						<input type="text" name="textfield" id="textfield" class="textfield" value="Nombre" onFocus="javascript:this.value=''">
+  						<br>
+  						<input type="text" name="textfield" id="textfield" class="textfield" value="Apellidos" onFocus="javascript:this.value=''">
+  						<br>
+  						<input type="text" name="textfield" id="textfield" class="textfield" value="eMail" onFocus="javascript:this.value=''">
+  						<br>
+  						<input type="text" name="textfield" id="textfield" class="textfield" value="Comentanos" onFocus="javascript:this.value=''">
+  						<br>
+  						<input type="submit" name="button" id="button" value="Submit">
+  							<input type="reset" name="button2" id="button2" value="Reset">
+					</form>
+					
+				</div>
+
+				<div class="form_container form_info">
+					
+					<h4>Diverplaza Centro Comercial</h4>
+					<h4>Transversal 96 #70a-85, Alamos, Bogotá, Colombia</h4>
+					<h4>57+1 430 40 73</h4>
+					<h4>© 2014 - www.diverplaza.com</h4>
+					<br>
+					<br>
+
+					
+				</div>
+
+			</div>
+		</section>
+	<footer>
+		<p style="font-size:30px; color: #edd03b;">Diverplaza Centro Comercial</p>
+		<p>Transversal 96 #70a-85, Alamos, Bogotá, Colombia</p>
+		<p>57+1 430 40 73</p>
+		<p style="color: #edd03b;">jefe.eventos@diverplaza.com</p>
+		<p>© 2014 - www.diverplaza.com</p>
+	</footer>
+
+
+
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script> 
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>
+	
+	<script src="js/jquery.js"></script>
+	<script src="js/jquery-1.10.1.min.js"></script>
+  	<script src="js/idangerous.swiper-2.1.min.js"></script>
+	<script src="js/modernizr.custom.js" ></script>
+	<script src="js/jquery.dlmenu.js"></script>
+ 	<script>
+		$(function() {
+			$( '#dl-menu' ).dlmenu();
+		});
+	</script>
+<script type="text/javascript">
+jQuery(document).ready(function(){
+	$objWindow = $(window);
+	$('div[data-type="background"]').each(function(){
+		var $bgObj = $(this);
+		$(window).scroll(function() {
+			var yPos = -($objWindow.scrollTop() / $bgObj.data('speed')); 
+           
+			var coords = '100% '+ yPos + 'px';
+            // Animate the background
+			 $bgObj.css({ backgroundPosition: coords });
+           
+		});
+		
+	});
+});
+</script>
+<script type="text/javascript">
+		$(function() {
+		  $('a[href*=#]:not([href=#])').click(function() {
+		    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+
+		      var target = $(this.hash);
+		      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+		      if (target.length) {
+		        $('html,body').animate({
+		          scrollTop: target.offset().top
+		        }, 1000);
+		        return false;
+		      }
+		    }
+		  });
+		});
+	</script>
+</body>
+</html>

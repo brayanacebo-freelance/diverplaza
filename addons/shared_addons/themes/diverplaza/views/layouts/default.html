@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>.::Diver Plaza::.</title>
+	{{ theme:css file="component.css" }}
+	{{ theme:css file="estilos.css" }}
+	{{ theme:css file="idangerous.swiper.css" }}
+	{{ theme:css file="normalize.css" }}
+</head>
+<body>
+{{ template:body }}
+<!-- 	<section id="llegar" >
+		<h2 class="estamos">Encuentranos</h2>
+		<div id="como_llegar">
+			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3976.3946746530582!2d-74.11519499999997!3d4.701301999999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f9b51a3c64b21%3A0xab2973bb79f953f3!2sDiver+Plaza+Alamos+-+Exito+Alamos!5e0!3m2!1ses-419!2s!4v1398112836531" width="100%" height="450" frameborder="0" style="border:0" scrollwheel="false" ></iframe>
+		</div>
+	</section> -->
+	<footer>
+		<p style="font-size:30px; color: #edd03b;">Diverplaza Centro Comercial</p>
+		<p>Transversal 96 #70a-85, Alamos, Bogotá, Colombia</p>
+		<p>57+1 430 40 73</p>
+		<p style="color: #edd03b;">jefe.eventos@diverplaza.com</p>
+		<p>© 2014 - www.diverplaza.com</p>
+	</footer>
+
+<!-- 	// <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script> -->
+{{ theme:js file="jquery.js" }}
+{{ theme:js file="idangerous.swiper-2.1.min.js" }}
+{{ theme:js file="modernizr.custom.js" }}
+{{ theme:js file="jquery.dlmenu.js" }}
+  	<script>
+	  	var mySwiper = new Swiper('.swiper-container',{
+	    pagination: '.pagination',
+	    paginationClickable: true,
+	    autoplay: 5000,
+	    // mode: 'vertical',
+  		});
+ 	</script>
+ 	<script>
+		$(function() {
+			$( '#dl-menu' ).dlmenu();
+		});
+	</script>
+	<script type="text/javascript">
+		$(function() {
+		  $('a[href*=#]:not([href=#])').click(function() {
+		    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+
+		      var target = $(this.hash);
+		      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+		      if (target.length) {
+		        $('html,body').animate({
+		          scrollTop: target.offset().top
+		        }, 1000);
+		        return false;
+		      }
+		    }
+		  });
+		});
+	</script>
+</body>
+</html>

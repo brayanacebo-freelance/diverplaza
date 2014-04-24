@@ -1,0 +1,630 @@
+@font-face {
+    font-family: 'brandon_grotesque_regularRg';
+    src: url('fuentes/brandon_reg-webfont.eot');
+    src: url('fuentes/brandon_reg-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fuentes/brandon_reg-webfont.woff') format('woff'),
+         url('fuentes/brandon_reg-webfont.ttf') format('truetype'),
+         url('fuentes/brandon_reg-webfont.svg#brandon_grotesque_regularRg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'brandon_grotesquelight';
+    src: url('fuentes/brandon_light-webfont.eot');
+    src: url('fuentes/brandon_light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fuentes/brandon_light-webfont.woff') format('woff'),
+         url('fuentes/brandon_light-webfont.ttf') format('truetype'),
+         url('fuentes/brandon_light-webfont.svg#brandon_grotesquelight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'brandon_grotesquebold';
+    src: url('fuentes/brandon_bld-webfont.eot');
+    src: url('fuentes/brandon_bld-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fuentes/brandon_bld-webfont.woff') format('woff'),
+         url('fuentes/brandon_bld-webfont.ttf') format('truetype'),
+         url('fuentes/brandon_bld-webfont.svg#brandon_grotesquebold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+body 
+{
+  margin: 0;
+  position: relative;
+  height: 100%;
+}
+html 
+{
+  height: 100%;
+}
+h1
+{
+	font-family: 'Brandon Grotesque';
+	font-size: 45px;
+	color: #ffffff;
+	text-align: center;
+    font-style: normal;
+}
+h2
+{
+    font-family: 'Brandon Grotesque';
+    font-size: 2em;
+    color: #ffffff;
+    text-align: center;
+    margin: 0;
+    padding: .5em;
+}
+h3
+{
+    font-family: 'Brandon Grotesque';
+    font-size: 1.2em;
+    color: #494c54;
+    /*text-align: center;*/
+    margin: 0;
+    padding: .5em;
+}
+p
+{
+    font-family: 'Brandon Grotesque';
+    font-size: ; 16px;
+    color: #494c54;
+    padding: 0;
+    margin: 0;
+    padding-left: .7em;
+
+}
+section .title_home
+{
+    font-family: 'Brandon Grotesque';
+    font-weight: lighter;
+    margin-top: 150px;
+}
+footer
+{
+	background: #39343d;
+    border-top: 2px solid #ed9c00;
+	padding: 2em 0;
+    line-height: 3;
+
+}
+
+footer p
+{
+	font-family: 'Brandon Grotesque';
+	font-size: ; 16px;
+	color: #ffffff;
+	text-align: center;
+}
+footer p .color2
+{
+	color: #edd03b;
+}
+
+header
+{
+    left: 13%;
+    position: absolute;
+    right: 13%;
+    margin-top: 20px;
+}   
+header #logo img
+{
+    width: 275px;
+    height: 85px;
+    float: left;
+}
+
+header #nav_redes
+{
+    float: right;
+    margin: 1em auto;
+    margin-right: 5em;
+    color: #ffffff;
+    text-align: center;
+}
+header #nav_redes ul li
+{
+    display: inline-block;
+}
+nav .nav_general
+{
+    position: absolute;
+width: 50%;
+right: 10%;
+}
+#botones_home
+{
+    margin-top: 150px;
+}
+#botones_home .btns {
+    margin-top: 5em;
+}
+#botones_home .btns a {
+    margin: 0px 0px 0px 0px;
+    background-image: url(../images/btn_1.png);
+    background-position: 65% 40%;
+    background-repeat: no-repeat;
+    background-origin: border-box;
+    
+    display: inline-block; width: 210px; height: 210px;
+    border-width: 50px;
+    border-color: rgba(0,0,0,0);
+    
+    border-radius: 100%;
+    -moz-border-radius: 100%;
+    -webkit-border-radius: 100%;
+    
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    
+    -webkit-transition: 0.3s ease;
+    -moz-transition: 0.3s ease;
+    -ms-transition: 0.3s ease;
+    -o-transition: 0.3s ease;
+    transition: 0.3s ease;
+}
+
+#botones_home .btns .bt2 {
+    background-image: url(../images/btn_2.png);
+}
+#botones_home .btns .bt3 {
+    background-image: url(../images/btn_3.png);
+}
+#botones_home .btns .bt4 {
+    background-image: url(../images/btn_4.png);
+}
+#botones_home .btns .bt5 {
+    background-image: url(../images/btn_5.png);
+}
+#botones_home .yon {border: 0px solid rgba(0, 0, 0, 0.7);}
+#botones_home .yon:hover{border: 10px solid #294999;}
+#botones_home .yon.bt2:hover{border: 10px solid #70589e;}
+#botones_home .yon.bt3:hover{border: 10px solid #ed8300;}
+#botones_home .yon.bt4:hover{border: 10px solid #e00c2d;}
+#botones_home .yon.bt5:hover{border: 10px solid #f6de3f;}
+
+#conocenos
+{
+    width: 970px;
+    margin: 0 auto;
+    margin-bottom: 3em;
+}
+#conocenos p
+{
+    text-align: justify;
+    padding-top: 1em;
+}
+#diverautos
+{
+    width: 970px;
+    margin: 0 auto;
+    margin-bottom: 3em;
+}
+#diverautos p
+{
+    text-align: justify;
+    padding-top: 1em;
+}
+#fundacion
+{
+    width: 970px;
+    margin: 0 auto;
+    margin-bottom: 3em;
+}
+#fundacion p
+{
+    text-align: justify;
+    padding-top: 1em;
+}
+
+#main
+{
+    color: #fff;
+    height: auto;
+    padding: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 10000;
+}
+#main_header 
+{
+    height: 120px;
+    background-color: #ed9c00;
+}
+.main_titulos
+{
+    font-family: 'Brandon Grotesque';
+    font-size: 3em;
+    font-weight: lighter;
+    height: 100px;
+    padding-top: 1em;
+    color: #494c54;
+}
+.mask_home
+{
+    width: 100%;
+    height: 100%;
+    background-image: url(../img/misc/bg.png);
+    z-index: 1;
+    position: absolute;
+}
+#nav_redes ul
+{
+    padding: 0;
+}
+#nav_redes ul li a
+{
+    color: white;
+    text-decoration: none;
+    background-position: top;
+    padding: 10px;
+}
+
+#nav_redes  ul li .face 
+{
+    background-image: url(../img/misc/face.png);
+    background-position: top;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+#nav_redes  ul li .face:hover 
+{
+    background-position: bottom;
+}
+#nav_redes  ul li .twit 
+{
+    background-image: url(../img/misc/twit.png);
+    background-position: top;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+#nav_redes  ul li .twit:hover 
+{
+    background-position: bottom;
+}
+#nav_redes  ul li .fore 
+{
+    background-image: url(../img/misc/fore.png);
+    background-position: top;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+#nav_redes  ul li .fore:hover 
+{
+    background-position: bottom;
+}
+#servicios
+{
+    /*width: 970px;*/
+    margin: 0 auto;
+}
+#servicios #home { 
+    
+    background: url("../img/servi/4_Biciletero.jpg");
+    /*background-attachment: fixed;*/
+    background-origin: initial;
+    background-clip: initial;
+    background-size: cover;
+    background-repeat:no-repeat;
+    background-position:100% 0; 
+    position:relative;
+    min-height:500px;
+}
+ #servicios #home .inner 
+    {   
+        margin-left: 300px;
+        width:540px; 
+        height:700px; 
+        background:url(../img/servi/4_Bicicletero.png) no-repeat; 
+    }
+#servicios #about { 
+    
+    background: url("../img/servi/zona_cafe.jpg");
+    background-attachment: fixed;
+    background-origin: initial;
+    background-clip: initial;
+    background-size: cover;
+    background-repeat:no-repeat;
+    background-position:100% 0; 
+    position:relative;
+    min-height:500px;
+}
+#servicios #blog { 
+    
+    background: url("../img/servi/zona_cajeros.jpg");
+    background-attachment: fixed;
+    background-origin: initial;
+    background-clip: initial;
+    background-size: cover;
+    background-repeat:no-repeat;
+    background-position:100% 0; 
+    position:relative;
+    min-height:500px;
+}
+#servicios #bodega p
+{
+    margin-bottom: 2em;
+}
+#servicios #contact { 
+    
+    background: url("../img/servi/parqueadero.jpg");
+    background-attachment: fixed;
+    background-origin: initial;
+    background-clip: initial;
+    background-size: cover;
+    background-repeat:no-repeat;
+    background-position:100% 0; 
+    position:relative;
+    min-height:500px;
+}
+
+#fundacion
+{
+    /*width: 970px;*/
+    margin: 0 auto;
+}
+#fundacion #home { 
+    
+    background: url("../img/funda/funda1.jpg");
+    /*background-attachment: fixed;*/
+    background-origin: initial;
+    background-clip: initial;
+    background-size: cover;
+    background-repeat:no-repeat;
+    background-position:100% 0; 
+    position:relative;
+    min-height:500px;
+}
+
+#fundacion #about { 
+    
+    background: url("../img/funda/funda2.jpg");
+    background-attachment: fixed;
+    background-origin: initial;
+    background-clip: initial;
+    background-size: cover;
+    background-repeat:no-repeat;
+    background-position:100% 0; 
+    position:relative;
+    min-height:500px;
+}
+
+#textarea
+{
+    height: 2em;
+    margin-bottom: 1em;
+}
+#tiendas
+{
+    padding-top: 2em;
+    width: 970px;
+    margin: auto;
+    overflow: hidden;
+    height: 1100px;
+}
+#tiendas .column1_tiendas
+{
+    margin:0 auto;
+    margin-right: 1em;
+    float: left;
+}
+#tiendas .column1_tiendas ul
+{
+    border: 3px solid #f0f0f0;
+    border-top: 5px solid #f0f0f0;
+    padding-left: 0;
+}
+#tiendas .column1_tiendas ul li
+{
+    list-style: none;
+    border-bottom: 2px solid #f0f0f0;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+#tiendas .column1_tiendas ul li a
+{
+    text-decoration: none;
+    font-family: 'Brandon Grotesque';
+    font-size: 1.2em;
+    color: #494c54;
+    padding-left: 2em;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+#tiendas .column1_tiendas ul li a:hover
+{
+    background-color: #ed8300;
+    color: #fff;
+}
+#tiendas .column2_tiendas
+{
+    width: 700px;
+    height: auto;
+    float: left;   
+}
+#tiendas .column2_tiendas .tienda
+{
+    width: 220px;
+    height: 300px;
+    float: left;   
+    border: 3px solid #f0f0f0;
+    margin-right: .4em;
+    margin-bottom: 2em;
+    position: relative;
+}
+#tiendas .column2_tiendas .tienda .logo
+{
+    width: 100px;
+    height: 100px;
+    border-radius:50%;
+    position: absolute;
+    border: 3px solid #fff;
+    top: 10%;
+    left:25%;
+}
+#tiendas .column2_tiendas .tienda .img_tienda
+{
+    border-bottom: 5px solid #f0f0f0;
+}
+#tiendas .paginador
+{
+    border-bottom: 5px solid #f0f0f0;
+    float: right;
+    display: block;
+}
+#tiendas .paginador ul li
+{
+    list-style: none;
+    display: inline-block;
+    margin-right: 10px;
+}
+#tiendas .paginador ul li a
+{
+    padding: 10px;
+    text-decoration: none;
+    color: #ffffff;
+    background-color: #a2c424;
+}
+#tiendas_2
+{
+    padding-top: 2em;
+    width: 970px;
+    margin: auto;
+    margin-bottom: 50px;
+    height: auto;
+}
+#tiendas_2 #detalle_main
+{
+    padding-top: 2em;
+    position: relative;
+    overflow: hidden;
+    height: 400px;
+}
+#tiendas_2 .detalle_tiendas
+{
+    text-align: center;
+    overflow: hidden;
+}
+#tiendas_2 .detalle_tiendas .detalle_logo
+{
+    width: 100px;
+    height: 100px;
+    border-radius:50%;
+    border: 5px solid #f0f0f0;
+    position: relative;
+    top: 10%;
+
+}
+#tiendas_2 .detalle_tiendas .detalle_titulo
+{
+    font-size: 4em;
+}
+#tiendas_2 .detalle_tiendas .detalle_img
+{
+    position: absolute;
+    left: 0;
+    width: 600px;
+}
+#tiendas_2 .detalle_tiendas .detalle_info
+{
+    position: absolute;
+    right: 0;
+    width: 245px;
+    padding: 0 30px;
+    text-align: justify;
+}
+#tiendas_2 .detalle_tiendas .detalle_info h3
+{
+    border-bottom: 3px solid #000;
+    margin: 0;
+    margin-bottom: 25px;
+    padding: 0;
+}
+#tiendas_2 .detalle_tiendas .detalle_info p
+{
+    line-height: 3;
+}
+#zonaD
+{
+    width: 970px;
+    margin: 0 auto;
+    margin-bottom: 3em;
+}
+#zonaD p
+{
+    text-align: justify;
+    padding-top: 1em;
+}
+.categorias_titulo
+{
+    background-color: #e00c2d;
+}
+.div
+{
+    width: 150px;
+    margin: auto;
+    border: 2px solid #626262;
+}
+.estamos{
+    background-color: #ed9c00;
+    height: 100px;
+    padding-top: 1em;
+}
+.swiper-active-switch 
+{
+  background: #fff;
+}
+.swiper-container 
+{
+  width: 100%;
+  height: 95%;
+  color: #fff;
+  text-align: center;
+  position: relative;
+}
+.swiper-container .pagination 
+{
+  position: absolute;
+  z-index: 20;
+  left: 10px;
+  bottom: 10px;
+}
+.swiper-pagination-switch 
+{
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  border-radius: 8px;
+  background: #222;
+  margin-right: 5px;
+  opacity: 0.8;
+  border: 1px solid #fff;
+  cursor: pointer;
+}
+.swiper-visible-switch 
+{
+  background: #aaa;
+}
+.swiper-wrapper .diver1-slide 
+{
+  background: url(../img/6.jpg);
+  background-size: cover;
+}
+.swiper-wrapper .diver2-slide 
+{
+  background: url(../img/7.jpg);
+  background-size: cover;
+}
+.swiper-wrapper .diver3-slide 
+{
+  background: url(../img/8.jpg);
+  background-size: cover;
+}

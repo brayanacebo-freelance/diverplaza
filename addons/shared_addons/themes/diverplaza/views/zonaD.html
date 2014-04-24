@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>.::Diver Plaza::.</title>
+	<link rel="stylesheet" type="text/css" href="css/component.css" />
+	<link rel="stylesheet" href="css/estilos.css">
+	<link rel="stylesheet" href="css/idangerous.swiper.css">
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+	<div id="main_header">
+		<header>	
+			<figure id="logo">
+				<a href="index.html"><img src="img/misc/logo.png" alt=""></a>
+			</figure>
+			<nav id="nav_redes">
+				<div class="title_nav_redes">
+					Comunidad Virtual Diverplaza:
+				</div>
+				<ul>
+					<li><a class="face" href="https://www.facebook.com/DiverPlazaCC" target="_blank"></a></li>
+					<li><a class="twit" href="https://twitter.com/DiverPlazaCC" target="_blank"></a></li>
+					<li><a class="fore" href="https://es.foursquare.com/v/diver-plaza/4bec6966c43f2d7fc0d9dbd9" target="_blank"></a></li>
+				</ul>
+			</nav>
+		</header>
+		<nav class="nav_general">
+			<div id="dl-menu" class="dl-menuwrapper">
+				<button class="dl-trigger">Open Menu</button>
+				<ul class="dl-menu">
+					<li><a href="#inicio">Inicio</a></li>
+					<li><a href="conocenos.html">Conocenos</a></li>
+					<li><a href="tiendas.html">Tiendas</a></li>
+					<li><a href="zonaD.html">Diversion</a></li>
+<!-- 					<li><a href="#">Eventos</a></li>
+					<li><a href="#">Divercliente</a></li> -->
+					<li><a href="servicios.html">Servicios</a></li>
+					<li><a href="contacto.html">Contáctenos</a></li>
+				</ul>
+			</div><!-- /dl-menuwrapper --><!-- /container -->
+		</nav>
+	</div>
+	<div>
+</div>
+
+	<h1 class="main_titulos">ZONA <strong>D</strong></h1>
+	<div class="div"></div>
+	<section id="zonaD">
+	<p >Zona D es el club de diversión que DiverPlaza tiene para ti y toda tu familia. Aquí podrás pasar horas completas de entretenimiento en La Bolera City Club, vivir aventuras emocionantes en los videojuegos de Divertronika o demostrar tus habilidades en Star Casino</p>
+
+		<h2 class="main_titulos"> <strong>Horario de Atención:</strong></h2>
+		<p  >
+			<strong>Cafeterías:</strong> de lunes a sábado de 8:00 a 10:00 p.m. Domingos y festivos de 9:00 a.m. a 9:30 p.m. jornada continua.
+		</p>
+		<p  >
+			<strong>Plazoleta de comidas y heladerías:</strong> de lunes a sábado de 12:00 m. a 9:00 p.m. jornada continua. Domingos y festivos de 11:00 a.m. a 9:30 p.m. jornada continua
+		</p>
+		<p  >
+			<strong>Ropa, calzado y artículos varios:</strong> de lunes a sábado de 10:00 a.m. a 9:00 p.m. Domingos y festivos de 11:00 a.m. a 8:00 p.m.
+		</p>
+		
+		<h3 style="color: #ed9c00; font-size:30px; text-align:center;">
+					Galeria
+		</h3>
+		<a href="#" style="display: block; text-align:center;"><img src="img/misc/abajo.png" alt=""></a>
+	</section>
+	<footer>
+		<p style="font-size:30px; color: #edd03b;">Diverplaza Centro Comercial</p>
+		<p>Transversal 96 #70a-85, Alamos, Bogotá, Colombia</p>
+		<p>57+1 430 40 73</p>
+		<p style="color: #edd03b;">jefe.eventos@diverplaza.com</p>
+		<p>© 2014 - www.diverplaza.com</p>
+	</footer>
+
+
+
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script> 
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>
+	
+	<script src="js/jquery.js"></script>
+	<script src="js/jquery-1.10.1.min.js"></script>
+  	<script src="js/idangerous.swiper-2.1.min.js"></script>
+	<script src="js/modernizr.custom.js" ></script>
+	<script src="js/jquery.dlmenu.js"></script>
+ 	<script>
+		$(function() {
+			$( '#dl-menu' ).dlmenu();
+		});
+	</script>
+<script type="text/javascript">
+jQuery(document).ready(function(){
+	$objWindow = $(window);
+	$('div[data-type="background"]').each(function(){
+		var $bgObj = $(this);
+		$(window).scroll(function() {
+			var yPos = -($objWindow.scrollTop() / $bgObj.data('speed')); 
+           
+			var coords = '100% '+ yPos + 'px';
+            // Animate the background
+			 $bgObj.css({ backgroundPosition: coords });
+           
+		});
+		
+	});
+});
+</script>
+<script type="text/javascript">
+		$(function() {
+		  $('a[href*=#]:not([href=#])').click(function() {
+		    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+
+		      var target = $(this.hash);
+		      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+		      if (target.length) {
+		        $('html,body').animate({
+		          scrollTop: target.offset().top
+		        }, 1000);
+		        return false;
+		      }
+		    }
+		  });
+		});
+	</script>
+</body>
+</html>
