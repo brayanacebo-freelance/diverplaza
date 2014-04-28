@@ -20,14 +20,12 @@
             <div id="dl-menu" class="dl-menuwrapper">
                 <button class="dl-trigger">Open Menu</button>
                 <ul class="dl-menu">
-                    <li><a href="index.html">Inicio</a></li>
-                    <li><a href="conocenos.html">Conocenos</a></li>
-                    <li><a href="tiendas.html">Tiendas</a></li>
-                    <li><a href="zonaD.html">Diversion</a></li>
-<!--                    <li><a href="#">Eventos</a></li>
-    <li><a href="#">Divercliente</a></li> -->
-    <li><a href="servicios.html">Servicios</a></li>
-    <li><a href="contacto.html">Contáctenos</a></li>
+                    <li><a href="home">Inicio</a></li>
+                <li><a href="conocenos">Conócenos</a></li>
+                <li><a href="tiendas">Tiendas</a></li>
+                <li><a href="diversion">Diversión</a></li>
+                <li><a href="servicios">Servicios</a></li>
+                <li><a href="contacto">Contáctenos</a></li>
 </ul>
 </div><!-- /dl-menuwrapper --><!-- /container -->
 </nav>

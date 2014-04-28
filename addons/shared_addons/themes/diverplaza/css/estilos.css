@@ -138,6 +138,15 @@ nav .nav_general
 width: 50%;
 right: 10%;
 }
+.buttons
+{
+    background-color: #ed8300;
+    border: 0;
+    width: 100px;
+    padding: 5px;
+    font-style: 'Brandon Grotesque';
+    color: #ffffff;
+}
 #botones_home
 {
     margin-top: 150px;
@@ -194,13 +203,14 @@ right: 10%;
 {
     width: 970px;
     margin: 0 auto;
-    margin-bottom: 3em;
+    /*margin-bottom: 3em;*/
 }
 #conocenos p
 {
     text-align: justify;
     padding-top: 1em;
 }
+
 #diverautos
 {
     width: 970px;
@@ -214,7 +224,6 @@ right: 10%;
 }
 #fundacion
 {
-    width: 970px;
     margin: 0 auto;
     margin-bottom: 3em;
 }
@@ -222,6 +231,47 @@ right: 10%;
 {
     text-align: justify;
     padding-top: 1em;
+    padding: 0 10em;
+}
+
+#fundacion #home { 
+    
+    background: url("../img/funda/funda1.jpg");
+    /*background-attachment: fixed;*/
+    background-origin: initial;
+    background-clip: initial;
+    background-size: cover;
+    background-repeat:no-repeat;
+    background-position:100% 0; 
+    position:relative;
+    min-height:500px;
+}
+#fundacion #home .inner
+{
+    margin-left: 300px;
+    width:540px; 
+    height:700px; 
+    background:url("../img/funda/funda1_anim.png") no-repeat; 
+}
+
+#fundacion #about { 
+    
+    background: url("../img/funda/funda2.jpg");
+    background-attachment: fixed;
+    background-origin: initial;
+    background-clip: initial;
+    background-size: cover;
+    background-repeat:no-repeat;
+    background-position:100% 0; 
+    position:relative;
+    min-height:500px;
+}
+#fundacion #about .inner
+{
+    margin-left: 300px;
+    width:540px; 
+    height:700px; 
+    background:url("../img/funda/funda1_anim.png") no-repeat; 
 }
 
 #main
@@ -239,22 +289,25 @@ right: 10%;
     height: 120px;
     background-color: #ed9c00;
 }
-.main_titulos
+#main_header .fundacion
 {
-    font-family: 'Brandon Grotesque';
-    font-size: 3em;
-    font-weight: lighter;
-    height: 100px;
-    padding-top: 1em;
-    color: #494c54;
+    background-color: #294999 !important;
 }
-.mask_home
+#main_header #zonaD
 {
-    width: 100%;
-    height: 100%;
-    background-image: url(../img/misc/bg.png);
-    z-index: 1;
-    position: absolute;
+    background-color: #ed9c00;
+}
+#main_header #conocenos
+{
+    background-color: #ed9c00;
+}
+#main_header #diverAutos
+{
+    background-color: #ed9c00;
+}
+#main_header #diverBodegas
+{
+    background-color: #ed9c00;
 }
 #nav_redes ul
 {
@@ -301,77 +354,13 @@ right: 10%;
 {
     background-position: bottom;
 }
-#servicios
-{
-    /*width: 970px;*/
-    margin: 0 auto;
-}
-#servicios #home { 
-    
-    background: url("../img/servi/4_Biciletero.jpg");
-    /*background-attachment: fixed;*/
-    background-origin: initial;
-    background-clip: initial;
-    background-size: cover;
-    background-repeat:no-repeat;
-    background-position:100% 0; 
-    position:relative;
-    min-height:500px;
-}
- #servicios #home .inner 
-    {   
-        margin-left: 300px;
-        width:540px; 
-        height:700px; 
-        background:url(../img/servi/4_Bicicletero.png) no-repeat; 
-    }
-#servicios #about { 
-    
-    background: url("../img/servi/zona_cafe.jpg");
-    background-attachment: fixed;
-    background-origin: initial;
-    background-clip: initial;
-    background-size: cover;
-    background-repeat:no-repeat;
-    background-position:100% 0; 
-    position:relative;
-    min-height:500px;
-}
-#servicios #blog { 
-    
-    background: url("../img/servi/zona_cajeros.jpg");
-    background-attachment: fixed;
-    background-origin: initial;
-    background-clip: initial;
-    background-size: cover;
-    background-repeat:no-repeat;
-    background-position:100% 0; 
-    position:relative;
-    min-height:500px;
-}
-#servicios #bodega p
-{
-    margin-bottom: 2em;
-}
-#servicios #contact { 
-    
-    background: url("../img/servi/parqueadero.jpg");
-    background-attachment: fixed;
-    background-origin: initial;
-    background-clip: initial;
-    background-size: cover;
-    background-repeat:no-repeat;
-    background-position:100% 0; 
-    position:relative;
-    min-height:500px;
-}
 
-#fundacion
+#bodega
 {
     /*width: 970px;*/
     margin: 0 auto;
 }
-#fundacion #home { 
+#bodega #home { 
     
     background: url("../img/funda/funda1.jpg");
     /*background-attachment: fixed;*/
@@ -384,7 +373,7 @@ right: 10%;
     min-height:500px;
 }
 
-#fundacion #about { 
+#bodega #about { 
     
     background: url("../img/funda/funda2.jpg");
     background-attachment: fixed;
@@ -395,6 +384,157 @@ right: 10%;
     background-position:100% 0; 
     position:relative;
     min-height:500px;
+}
+
+#servicios
+{
+    padding-top: 2em;
+    width: 970px;
+    margin: auto;
+    overflow: hidden;
+    height: 1100px;
+}
+#servicios .column1_servicios
+{
+    margin:0 auto;
+    margin-right: 1em;
+    float: left;
+}
+#servicios .column1_servicios ul
+{
+    border: 3px solid #f0f0f0;
+    border-top: 5px solid #f0f0f0;
+    padding-left: 0;
+    margin-top: 0;
+}
+#servicios .column1_servicios ul li
+{
+    list-style: none;
+    border-bottom: 2px solid #f0f0f0;
+}
+#servicios .column1_servicios ul li a
+{
+    color: #494c54;
+    display: block;
+    font-family: 'Brandon Grotesque';
+    font-size: 1.2em;
+    padding-left: 2em;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    text-decoration: none;
+}
+#servicios .column1_servicios ul li a:hover
+{
+    background-color: #ed8300;
+    color: #fff;
+}
+#servicios .column2_servicios
+{
+    width: 100%;
+    height: auto;
+    float: left;   
+}
+#servicios .column2_servicios .servicio
+{
+    width: 220px;
+    height: 300px;
+    float: left;   
+    border: 3px solid #f0f0f0;
+    margin-right: .4em;
+    margin-bottom: 2em;
+    position: relative;
+}
+#servicios .column2_servicios .servicio .logo
+{
+    width: 100px;
+    height: 100px;
+    border-radius:50%;
+    position: absolute;
+    border: 3px solid #fff;
+    top: 10%;
+    left:25%;
+}
+#servicios .column2_servicios .servicio .img_servicio
+{
+    border-bottom: 5px solid #f0f0f0;
+}
+#servicios .paginador
+{
+    border-bottom: 5px solid #f0f0f0;
+    float: right;
+    display: block;
+}
+#servicios .paginador ul li
+{
+    list-style: none;
+    display: inline-block;
+    margin-right: 10px;
+}
+#servicios .paginador ul li a
+{
+    padding: 10px;
+    text-decoration: none;
+    color: #ffffff;
+    background-color: #a2c424;
+}
+#servicios_2
+{
+    padding-top: 2em;
+    width: 970px;
+    margin: auto;
+    margin-bottom: 50px;
+    height: auto;
+}
+#servicios_2 #detalle_main
+{
+    padding-top: 2em;
+    position: relative;
+    overflow: hidden;
+    height: 400px;
+}
+#servicios_2 .detalle_servicios
+{
+    text-align: center;
+    overflow: hidden;
+}
+#servicios_2 .detalle_servicios .detalle_logo
+{
+    width: 100px;
+    height: 100px;
+    border-radius:50%;
+    border: 5px solid #f0f0f0;
+    position: relative;
+    top: 10%;
+
+}
+#servicios_2 .detalle_servicios .detalle_titulo
+{
+    font-size: 4em;
+}
+#servicios_2 .detalle_servicios .detalle_img
+{
+    position: absolute;
+    left: 0;
+    width: 600px;
+}
+#servicios_2 .detalle_servicios .detalle_info
+{
+    position: absolute;
+    right: 0;
+    width: 245px;
+    padding: 0 30px;
+    text-align: justify;
+}
+#servicios_2 .detalle_servicios .detalle_info h3
+{
+    border-bottom: 3px solid #000;
+    margin: 0;
+    margin-bottom: 25px;
+    padding: 0;
+}
+#servicios_2 .detalle_servicios .detalle_info p
+{
+    line-height: 3;
 }
 
 #textarea
@@ -421,23 +561,23 @@ right: 10%;
     border: 3px solid #f0f0f0;
     border-top: 5px solid #f0f0f0;
     padding-left: 0;
+    margin-top: 0;
 }
 #tiendas .column1_tiendas ul li
 {
     list-style: none;
     border-bottom: 2px solid #f0f0f0;
-    padding-top: 15px;
-    padding-bottom: 15px;
 }
 #tiendas .column1_tiendas ul li a
 {
-    text-decoration: none;
+    color: #494c54;
+    display: block;
     font-family: 'Brandon Grotesque';
     font-size: 1.2em;
-    color: #494c54;
     padding-left: 2em;
     padding-top: 15px;
     padding-bottom: 15px;
+    text-decoration: none;
 }
 #tiendas .column1_tiendas ul li a:hover
 {
@@ -563,6 +703,12 @@ right: 10%;
     text-align: justify;
     padding-top: 1em;
 }
+.contacto{
+    position: relative;
+    left: 20%;
+    right: 20%;
+    margin-bottom: 5em;
+}
 .categorias_titulo
 {
     background-color: #e00c2d;
@@ -578,6 +724,38 @@ right: 10%;
     height: 100px;
     padding-top: 1em;
 }
+.form_info{
+
+    /*border-left: solid 2px #ed8300;*/
+    color: #666666;
+    font-size: 14px !important;
+}
+.form{
+    width: 976px;
+}
+.form_container{
+    margin-top: 100px;
+    margin-left: 150px;
+    display: inline-block;
+
+}
+.main_titulos
+{
+    font-family: 'Brandon Grotesque';
+    font-size: 3em;
+    font-weight: lighter;
+    height: 100px;
+    padding-top: 1em;
+    color: #494c54;
+}
+.mask_home
+{
+    width: 100%;
+    height: 100%;
+    background-image: url(../img/misc/bg.png);
+    z-index: 1;
+    position: absolute;
+}
 .swiper-active-switch 
 {
   background: #fff;
@@ -585,7 +763,7 @@ right: 10%;
 .swiper-container 
 {
   width: 100%;
-  height: 95%;
+  height: 1000px;
   color: #fff;
   text-align: center;
   position: relative;
@@ -594,7 +772,7 @@ right: 10%;
 {
   position: absolute;
   z-index: 20;
-  left: 10px;
+  left: 47%;
   bottom: 10px;
 }
 .swiper-pagination-switch 
@@ -608,6 +786,10 @@ right: 10%;
   opacity: 0.8;
   border: 1px solid #fff;
   cursor: pointer;
+}
+.swiper-slide img
+{
+    width: 100%;
 }
 .swiper-visible-switch 
 {
@@ -627,4 +809,15 @@ right: 10%;
 {
   background: url(../img/8.jpg);
   background-size: cover;
+}
+.textfield{
+    width: 150%;
+    height: 40px;
+    margin-bottom: 25px;
+    background-color: #F0B78A;
+    border: solid 3px #ed8300;
+    font-family: 'Lato';
+    color: #FFFFFF;
+    padding-left: 10px;
+
 }

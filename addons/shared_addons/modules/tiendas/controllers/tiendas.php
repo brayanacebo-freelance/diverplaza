@@ -61,10 +61,10 @@ class Tiendas extends Public_Controller {
             }
 
                 // Se ordena el Array por id de forma DESC
-            usort($stores, function($a, $b)
-            {
-                return strcmp($b->id, $a->id);
-            });
+            // @usort($stores, function($a, $b)
+            // {
+            //     return strcmp($b->id, $a->id);
+            // });
         }
 
     }else{
