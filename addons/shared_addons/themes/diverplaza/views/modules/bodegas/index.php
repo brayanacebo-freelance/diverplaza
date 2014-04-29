@@ -91,7 +91,7 @@
                 <li><a href="tiendas">Tiendas</a></li>
                 <li><a href="diversion">Diversión</a></li>
                 <li><a href="servicios">Servicios</a></li>
-                <li><a href="contacto">Contáctenos</a></li>
+                <li><a href="contactenos">Contáctenos</a></li>
             </ul>
         </div><!-- /dl-menuwrapper --><!-- /container -->
     </nav>

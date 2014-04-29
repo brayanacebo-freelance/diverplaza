@@ -1,6 +1,6 @@
 
 <div id="main_header">
-    <header>	
+    <header>
         <figure id="logo">
             <a href="<?php echo site_url('home') ?>"><img src="<?php echo site_url('addons/shared_addons/themes/diverplaza/img/misc/logo.png'); ?>" alt="Logo"></a>
         </figure>
@@ -24,7 +24,7 @@
                 <li><a href="tiendas">Tiendas</a></li>
                 <li><a href="diversion">Diversión</a></li>
                 <li><a href="servicios">Servicios</a></li>
-                <li><a href="contacto">Contáctenos</a></li>
+                <li><a href="contactenos">Contáctenos</a></li>
             </ul>
         </div><!-- /dl-menuwrapper --><!-- /container -->
     </nav>
@@ -43,7 +43,7 @@
         <div class="form_container">
 
             <form name="send" method="post" action="<?php echo site_url('contactenos/send') ?>">
-                
+
                 <?php if ($this->session->flashdata('error')): ?>
 
                 <div style="color: red">
@@ -63,7 +63,7 @@
                 </div>
 
             <?php endif; ?>
-                
+
                 <input type="text" name="nombre" id="textfield" class="textfield" value="Nombre" onFocus="javascript:this.value=''">
                 <br>
                 <input type="text" name="apellidos" id="textfield" class="textfield" value="Apellidos" onFocus="javascript:this.value=''">

@@ -43,12 +43,12 @@ class Module_Fundacion extends Module {
                 'constraint' => '455',
                 'null' => true
             ),
-            'title' => array(
+            'name' => array(
                 'type' => 'VARCHAR',
                 'constraint' => '455',
                 'null' => true
             ),
-            'test' => array(
+            'description' => array(
                 'type' => 'TEXT',
                 'null' => true
             )
