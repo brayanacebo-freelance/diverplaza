@@ -34,13 +34,33 @@
                             <br class="clear">
                         </li>
                         <li>
+                            <label for="name">Imagen de fondo
+                                <small>
+                                    - Imagen Permitidas gif | jpg | png | jpeg<br>
+                                    - Tamaño Máximo 2 MB<br>
+                                    - Ancho Máximo 252px<br>
+                                    - Alto Máximo 170px
+                                </small>
+                            </label>
+                            <div class="input">
+                                <?php if (!empty($store->background)): ?>
+                                    <div>
+                                        <img src="<?php echo val_image($store->background) ?>" width="298">
+                                    </div>
+                                <?php endif; ?>
+                                <div class="btn-false">
+                                    <?php echo form_upload('background', '', ' id="image"'); ?>
+                                </div>
+                            </div>
+                            <br class="clear">
+                        </li>
+                        <li>
                             <label for="title">Nombre <span>*</span></label>
                             <div class="input"><?php echo form_input('name', $store->name, 'class="dev-input-title"'); ?></div>
                         </li>
                         <li>
-                            <label for="path">Categorias</label>
+                            <label for="path">Categorias <span>*</span></label>
                             <select name="categories[]" multiple>
-                                <option value="0">Seleccione una Opción</option>
                                 <?php foreach ($categories as $item): ?>
                                     <option value="<?php echo $item->id; ?>" <?php echo (in_array($item->id, $selected_category)) ? 'selected' : null ?>>
                                         <?php echo $item->title; ?>

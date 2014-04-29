@@ -20,12 +20,12 @@
             <div id="dl-menu" class="dl-menuwrapper">
                 <button class="dl-trigger">Open Menu</button>
                 <ul class="dl-menu">
-                    <li><a href="home">Inicio</a></li>
-                <li><a href="conocenos">Conócenos</a></li>
-                <li><a href="tiendas">Tiendas</a></li>
-                <li><a href="diversion">Diversión</a></li>
-                <li><a href="servicios">Servicios</a></li>
-                <li><a href="contactenos">Contáctenos</a></li>
+                    <li><a href="<?php echo site_url('home') ?>">Inicio</a></li>
+                <li><a href="<?php echo site_url('conocenos') ?>">Conócenos</a></li>
+                <li><a href="<?php echo site_url('tiendas') ?>">Tiendas</a></li>
+                <li><a href="<?php echo site_url('diversion') ?>">Diversión</a></li>
+                <li><a href="<?php echo site_url('servicios') ?>">Servicios</a></li>
+                <li><a href="<?php echo site_url('contactenos') ?>">Contáctenos</a></li>
 </ul>
 </div><!-- /dl-menuwrapper --><!-- /container -->
 </nav>
@@ -52,10 +52,6 @@
                         <div class="pagination"></div>
                     </div>
                 </div>
-            </div>
-            <div class="detalle_info">
-                <h3>Hola</h3>
-                <?php echo $store->introduction; ?>
             </div>
             <a href="#main_header" style="position:absolute; bottom:0; right:0;"><img src="<?php echo site_url('addons/shared_addons/themes/diverplaza/img/misc/subir_detalle.png'); ?>" alt=""></a>
         </div>

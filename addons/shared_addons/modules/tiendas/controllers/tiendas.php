@@ -53,6 +53,7 @@ class Tiendas extends Public_Controller {
                     $storesObj->id = $store->id;
                     $storesObj->name = substr($store->name, 0, 20);
                     $storesObj->image = val_image($store->image);
+                    $storesObj->background = val_image($store->background);
                     $storesObj->introduction = substr($store->introduction, 0, 100);
                     $storesObj->price = ($store->price) ? "Precio: $".number_format($store->price) : null;
                     $storesObj->slug = $store->slug;

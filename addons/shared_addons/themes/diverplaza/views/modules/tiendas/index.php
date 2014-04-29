@@ -19,12 +19,12 @@
         <div id="dl-menu" class="dl-menuwrapper">
             <button class="dl-trigger">Open Menu</button>
             <ul class="dl-menu">
-                <li><a href="home">Inicio</a></li>
-                <li><a href="conocenos">Conócenos</a></li>
-                <li><a href="tiendas">Tiendas</a></li>
-                <li><a href="diversion">Diversión</a></li>
-                <li><a href="servicios">Servicios</a></li>
-                <li><a href="contactenos">Contáctenos</a></li>
+                <li><a href="<?php echo site_url('home') ?>">Inicio</a></li>
+                <li><a href="<?php echo site_url('conocenos') ?>">Conócenos</a></li>
+                <li><a href="<?php echo site_url('tiendas') ?>">Tiendas</a></li>
+                <li><a href="<?php echo site_url('diversion') ?>">Diversión</a></li>
+                <li><a href="<?php echo site_url('servicios') ?>">Servicios</a></li>
+                <li><a href="<?php echo site_url('contactenos') ?>">Contáctenos</a></li>
             </ul>
         </div><!-- /dl-menuwrapper --><!-- /container -->
     </nav>
@@ -45,8 +45,7 @@
         <?php foreach ($stores as $item): ?>
             <article class="tienda">
                 <img src="<?php echo $item->image ?>" alt="Logo" class="logo">
-                <img src="<?php echo site_url('addons/shared_addons/themes/diverplaza/img/store/tienda_1.jpg'); ?>" alt="" class="img_tienda">
-
+                <img src="<?php echo $item->background ?>" alt="background" class="img_tienda" width="226" height="336">
                 <div class="info_tienda">
                     <h3><a href="<?php echo $item->url; ?>"><?php echo $item->name ?></a></h3>
                     <p><?php echo ucfirst($item->introduction) ?></p>

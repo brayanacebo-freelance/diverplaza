@@ -29,13 +29,28 @@
                                 <br class="clear">
                             </li>
                             <li>
+                                <label for="name">Imagen de fondo
+                                    <small>
+                                        - Imagen Permitidas gif | jpg | png | jpeg<br>
+                                        - Tamaño Máximo 2 MB<br>
+                                        - Ancho Máximo 252px<br>
+                                        - Alto Máximo 170px
+                                    </small>
+                                </label>
+                                <div class="input">
+                                    <div class="btn-false">
+                                        <?php echo form_upload('background'); ?>
+                                    </div>
+                                </div>
+                                <br class="clear">
+                            </li>
+                            <li>
                                 <label for="title">Nombre <span>*</span></label>
                                 <div class="input"><?php echo form_input('name', set_value('name'), 'class="dev-input-title"'); ?></div>
                             </li>
                             <li>
-                                <label for="path">Categorias</label>
+                                <label for="path">Categorias <span>*</span></label>
                                 <select name="categories[]" multiple>
-                                    <option value="0">Seleccione una Opción</option>
                                     <?php foreach ($categories as $item): ?>
                                         <option value="<?php echo $item->id; ?>" <?php echo set_select('categories', $item->id); ?>>
                                             <?php echo $item->title; ?>

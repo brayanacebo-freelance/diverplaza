@@ -181,7 +181,7 @@ class Admin extends Admin_Controller {
 
         // Validaciones del Formulario
         $this->form_validation->set_rules('name', 'Nombre', 'required|trim');
-        $this->form_validation->set_rules('categories', 'Categorias');
+        $this->form_validation->set_rules('categories', 'Categorias', 'required');
         $this->form_validation->set_rules('content', 'Descripción', 'required|trim');
         $this->form_validation->set_rules('introduction', 'Introducción', 'required|trim');
         $this->form_validation->set_rules('price', 'Precio', 'integer');
@@ -223,6 +223,21 @@ class Admin extends Admin_Controller {
                 }
             }
 
+            // fondo
+            $background = $_FILES['background']['name'];
+
+            if (!empty($background)) {
+                if ($this->upload->do_upload('background')) {
+                    $datos = array('upload_data' => $this->upload->data());
+                    $path2 = UPLOAD_PATH . 'stores/' . $datos['upload_data']['file_name'];
+                    $background = array('background' => $path2);
+                    $data = array_merge($data, $background);
+                } else {
+                    $this->session->set_flashdata('error', $this->upload->display_errors());
+                    redirect('admin/tiendas/');
+                }
+            }
+
             // Se inserta en la base de datos
             if ($this->store_model->insert($data)) {
 
@@ -257,6 +272,7 @@ class Admin extends Admin_Controller {
         $obj = $this->db->where('id', $id)->get($this->db->dbprefix.'stores')->row();
         if ($this->store_model->delete($id)) {
             @unlink($obj->image); // Eliminamos archivo existente
+            @unlink($obj->background); // Eliminamos archivo existente
             $this->db->delete($this->db->dbprefix.'stores_categories', array('store_id' => $id)); // Eliminaos relación pro cat
             $this->session->set_flashdata('success', 'El registro se elimino con éxito.');
         } else {
@@ -329,6 +345,23 @@ class Admin extends Admin_Controller {
                     $data = array_merge($data, $img);
                     $obj = $this->db->where('id', $post->id)->get('stores')->row();
                     @unlink($obj->image);
+                } else {
+                    $this->session->set_flashdata('error', $this->upload->display_errors());
+                    redirect('admin/tiendas/');
+                }
+            }
+
+            // fonde
+            $background = $_FILES['background']['name'];
+
+            if (!empty($background)) {
+                if ($this->upload->do_upload('background')) {
+                    $datos = array('upload_data' => $this->upload->data());
+                    $path2 = UPLOAD_PATH . 'stores/' . $datos['upload_data']['file_name'];
+                    $background = array('background' => $path2);
+                    $data = array_merge($data, $background);
+                    $obj = $this->db->where('id', $post->id)->get('stores')->row();
+                    @unlink($obj->background);
                 } else {
                     $this->session->set_flashdata('error', $this->upload->display_errors());
                     redirect('admin/tiendas/');
